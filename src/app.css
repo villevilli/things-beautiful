@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Roboto';
+    src:local('Roboto'),
+        url(/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(/fonts/materialIcons/MaterialIcons-Regular.ttf) format('truetype');
+    font-display: swap;
+}
+  
+
+:root{
+    --dark-bg-color: rgb(14, 14, 14);
+    --dark-navbar-color: rgb(26, 26, 26);
+    --dark-text-color: white;
+
+    font-family: 'Roboto', 'sans-serif';
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+button{
+    background: none;
+    color: inherit;
+    border: none;
+}
+button:hover{
+    transition: 0.1s;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: inherit;
+}
+button:active{
+    border-radius: inherit;
+}
+
+button.material-icons{
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;  /* Preferred icon size */
+    display: inline-flex;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
